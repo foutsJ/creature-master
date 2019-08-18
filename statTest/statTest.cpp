@@ -313,7 +313,7 @@ int main()
 				menuflg = false;
 			}
 
-	} while (menuflg = true);
+	} while (menuflg == true);
 
 
 	system("CLS");
