@@ -21,9 +21,15 @@
     <ClCompile Include="charStats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="bugbear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="charStats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bugbear.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
