@@ -407,7 +407,7 @@ void charStats::saveGame()
 		char1 << getName() << endl << getRace() << endl << getStr() << endl << getEnd() << endl
 			  << getAgl() << endl << getInt() << endl;
 
-		cout << "\n\nSave Complete!";
+		cout << "\n\nSave Complete!\n\n";
 
 		system("pause");
 	}

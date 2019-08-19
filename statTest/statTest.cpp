@@ -319,10 +319,14 @@ int main()
 
 
 	system("CLS");
-	cout << "Demo complete. Coming soon: ";
-	cout << "\n\t+ Ability to save created creature";
-	cout << "\n\t+ Redo genStats() to produce single values instead of array (X)";
-	cout << "\n\t+ Implement total character redo at end of creation (X)\n\n";
+	cout << "Demo complete! Stay tuned over at:\n";
+	printf("https://github.com/foutsJ/creature-master");
+
+	cout << "\n\n";
+
+	//cout << "\n\t+ Ability to save created creature";
+	//cout << "\n\t+ Redo genStats() to produce single values instead of array (X)";
+	//cout << "\n\t+ Implement total character redo at end of creation (X)\n\n";
 	system("pause");
 }
 
