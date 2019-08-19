@@ -315,6 +315,8 @@ int main()
 
 	} while (menuflg == false);
 
+	newChar.saveGame();
+
 
 	system("CLS");
 	cout << "Demo complete. Coming soon: ";

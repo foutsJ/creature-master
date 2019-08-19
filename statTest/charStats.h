@@ -27,6 +27,8 @@ class charStats
 		
 		string getName();
 		string getRace();
+
+		void saveGame();
 	private:
 		string name;
 		string race;

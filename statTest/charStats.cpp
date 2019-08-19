@@ -1,5 +1,6 @@
 #include "charStats.h"
 #include <iostream>
+#include <fstream>
 #include <time.h>
 
 using namespace std;
@@ -97,7 +98,7 @@ void charStats::setEnd(int nend)
 void charStats::setAgl(int nagl)
 {
 	isAglPos = 0;
-	isAglNeg - 0;
+	isAglNeg = 0;
 
 	if (raceflg == 2)
 	{
@@ -382,4 +383,33 @@ void charStats::setName(string newname)
 string charStats::getName(void)
 {
 	return name;
+}
+
+void charStats::saveGame()
+{
+	system("CLS");
+
+	char entry;
+	ofstream char1("char1.dat", ios::out);
+
+	if (!char1)
+	{
+		cerr << "File could not be opened." << endl;
+		exit(1);
+	}
+
+	cout << "Save your game? (Y/N)\n\n";
+
+	cin >> entry;
+
+	if ((entry == 'y') || (entry == 'Y'))
+	{
+		char1 << getName() << endl << getRace() << endl << getStr() << endl << getEnd() << endl
+			  << getAgl() << endl << getInt() << endl;
+
+		cout << "\n\nSave Complete!";
+
+		system("pause");
+	}
+
 }
