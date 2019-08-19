@@ -151,10 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bugbear.cpp" />
     <ClCompile Include="charStats.cpp" />
     <ClCompile Include="statTest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bugbear.h" />
     <ClInclude Include="charStats.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
