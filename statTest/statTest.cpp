@@ -309,18 +309,18 @@ int main()
 				cout << "\n!! Restarting character builder !!\n\n";
 				newChar.~charStats(); //destroy data
 				system("pause");
-				system("CLS");
 				menuflg = false;
+				system("CLS");
 			}
 
-	} while (menuflg == true);
+	} while (menuflg == false);
 
 
 	system("CLS");
 	cout << "Demo complete. Coming soon: ";
 	cout << "\n\t+ Ability to save created creature";
 	cout << "\n\t+ Redo genStats() to produce single values instead of array (X)";
-	cout << "\n\t+ Implement total character redo at end of creation\n\n (X)";
+	cout << "\n\t+ Implement total character redo at end of creation (X)\n\n";
 	system("pause");
 }
 
