@@ -27,6 +27,10 @@ charStats::~charStats()
 
 void charStats::setStr(int nstr)
 {
+	//##DEBUG## init flags to 0
+	isStrPos = 0;
+	isStrNeg = 0;
+
 	//##DEBUG##
 	//nstr = 5;
 	if (raceflg == 3)
@@ -66,6 +70,9 @@ void charStats::setStr(int nstr)
 
 void charStats::setEnd(int nend)
 {
+	isEndPos = 0;
+	isEndNeg = 0;
+
 	if (raceflg == 1)
 	{
 		//cyclops:setStr(nend);
@@ -89,6 +96,9 @@ void charStats::setEnd(int nend)
 
 void charStats::setAgl(int nagl)
 {
+	isAglPos = 0;
+	isAglNeg - 0;
+
 	if (raceflg == 2)
 	{
 		//dragonoid:setAgl(nagl);
@@ -113,6 +123,9 @@ void charStats::setAgl(int nagl)
 
 void charStats::setInt(int nint)
 {
+	isIntPos = 0;
+	isIntNeg = 0;
+
 	if (raceflg == 1)
 	{
 		//cyclops:setInt(nint);
@@ -192,56 +205,6 @@ void charStats::genStats()
 		setEnd(r[1]);
 		setAgl(r[2]);
 		setInt(r[3]);
-
-		/*apply bonus/neg
-		if (race == "Cyclops")
-		{
-			if (r[3] < 5)
-			{
-				r[3] += 1;
-				cout << "\nBonus applied (INT)";
-			}
-
-			if (r[1] > 1)
-			{
-				r[1] -= 1;
-				cout << "\nNegative applied (END)";
-			}
-		}
-		else if (race == "Dragonoid")
-		{
-			if (r[2] < 5)
-			{
-				r[2] += 1;
-				cout << "\nBonus applied (AGL)";
-			}
-
-			if (r[0] > 1)
-			{
-				r[0] -= 1;
-				cout << "\nNegative applied (STR)";
-			}
-		}
-		else if (race == "Bugbear")
-		{
-			if (r[0] < 5)
-			{
-				r[0] += 1;
-				cout << "\nBonus applied (STR)";
-			}
-
-			if (r[3] > 1)
-			{
-				r[3] -= 1;
-				cout << "\nNegative applied (INT)";
-			}
-		}
-
-		//print stats
-		cout << "\n\nStrength: " << r[0] << endl;
-		cout << "Endurance: " << r[1] << endl;
-		cout << "Agility: " << r[2] << endl;
-		cout << "Intelligence:" << r[3] << endl;*/
 }
 
 /*int charStats::genStats()
@@ -420,24 +383,3 @@ string charStats::getName(void)
 {
 	return name;
 }
-
-/*
-string charStats::printBonusPos()
-{
-	if ((isStrPos == 1) || (isEndPos == 1) || (isAglPos == 1) || (isIntPos == 1))
-	{
-		bonus1 = " (+1)";
-	}
-	return bonus1;
-}
-
-string charStats::printBonusNeg()
-{
-	if ((isStrNeg == 1) || (isEndNeg == 1) || (isAglNeg == 1) || (isIntNeg == 1))
-	{
-		bonus2 = " (-1)";
-	}
-
-	return bonus2;
-}*/
-

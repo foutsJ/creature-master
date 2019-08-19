@@ -27,8 +27,6 @@ class charStats
 		
 		string getName();
 		string getRace();
-		string printBonusPos();
-		string printBonusNeg();
 	private:
 		string name;
 		string race;
