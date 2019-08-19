@@ -11,3 +11,12 @@ Initial functional demo release. The player can:
 - Randomly generate stats and observe bonuses/negatives according to their creature's race
 - Completely redo the creation process if unhappy with character
 - Save character info to a file
+
+## What's next to develop?
+The "master list" of feature ideas need to be reviewed, but the following are planned, in no order of iteration:
+- New member functions of charStats to hold info about body parts/limbs
+- Physical body description class to tie in with stats
+- An ability to generate random creatures with their own stats and race using charStats(?)
+- begin looking at creating a demo gamestate to test descriptions, stat changes, body morphs, etc
+
+List subject to change.
